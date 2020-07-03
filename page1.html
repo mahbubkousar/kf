@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+html {
+  scroll-behavior: smooth;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background:black;
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+
+.center
+{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-20%);
+	width: 250px;
+	z-index:-1;
+	height: 250px;
+	box-sizing: border-box;
+	border: 15px solid rgba(0,0,0,.8);
+	border-radius: 50%;
+}
+.circle1
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #f1c40f #e74c3c #9b59b6 #2ecc71;
+	box-sizing: border-box;
+	animation: animateCircle1 5s linear infinite;
+	background: #262626;
+}
+.circle2
+{
+	position: absolute;
+	top: 19px;
+	left: 19px;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	border-radius: 50%;
+	border: 4px dashed #fff;
+	animation: animateCircle2 10s linear infinite;
+}
+.circle3
+{
+	position: absolute;
+	top: 23px;
+	left: 23px;
+	width: calc(100% - 50px);
+	height: calc(100% - 50px);
+	border-radius: 50%;
+	background: url(https://1.bp.blogspot.com/--SiGNB-ki9s/Xv8o5Dl8XjI/AAAAAAAAFEg/vydv-nVgu5oPalY-hjWseG41MT36ljklgCLcBGAsYHQ/s1600/20200703_162302.jpg);
+	background-size: cover;
+}
+@keyframes animateCircle1 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+@keyframes animateCircle2 
+{
+	0%
+	{
+		transform: rotate(360deg);
+	}
+	100%
+	{
+		transform: rotate(0deg);
+	}
+}
+
+</style>
+<div style="height:100vh;width:100vw">
+<div class="center">
+	<div class="circle1"></div>
+	<div class="circle2"></div>
+	<div class="circle3"></div>
+</div>
+<img src="https://3.bp.blogspot.com/-JVxFWWJZIPA/Xv8o4Tm3T8I/AAAAAAAAFEc/oMxaP9jKs7Qlqrf7sMeC5qDhSUTP6vQYQCLcBGAsYHQ/s1600/images%2B%252821%2529.jpeg" style="position:fixed;width:100%;height:100%;z-index:-10;">
+
+
+<style type="text/css">
+
+.a
+{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-80%);
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+
+	transform-origin: center center;
+	
+}
+span
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	line-height: 60px;
+	font-size: 24px;
+	background: rgba(255,255,255,.05);
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	transition: 1s;
+}
+span.front
+{
+	transform: rotateX(0deg) translateZ(20px);
+}
+a:hover span.front
+{
+	transform: rotateX(-180deg) translateZ(20px);
+}
+span.back
+{
+	transform: rotateX(180deg) translateZ(20px);
+}
+a:hover span.back
+{
+	transform: rotateX(0deg) translateZ(20px);
+}
+span.cent
+{
+	background: linear-gradient(to left, #c31a5b, #7129bd);
+}
+span.cent:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to left, #ffdd1f, #c31a5b);
+	border-radius: 30px;
+	transform: translateZ(-1px);
+}
+.a:hover span.cent
+{
+	transform: rotateX(-180deg);
+}
+</style>
+<a href="#" class="a">
+	<span class="front">Explore</span>
+	<span class="cent"></span>
+	<span class="back">Go down ↓</span>
+</a>
+
+
+
+
+
+
+</div>
+<div  style="background:linear-gradient(to bottom,red,black,black,black);height:100vh;width:100vw;">
+
+<!-- Container for the image gallery -->
+<div style="height:70%">
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="https://1.bp.blogspot.com/-jdxP1a2VQC8/Xv8fjX4i02I/AAAAAAAAFDY/YssFoli4b4s3wdTbYNEvtVSZoh0l9p33ACLcBGAsYHQ/s1600/20200703_175453.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="https://1.bp.blogspot.com/-6zibVIkWV5s/Xv8fjUP4x4I/AAAAAAAAFDg/QNYjx4JIwEcLQrCu8bPoHFpYlTlXY-U3ACLcBGAsYHQ/s1600/20200703_175527.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="https://2.bp.blogspot.com/-9OZ98EGVph4/Xv8fjVj0yVI/AAAAAAAAFDc/G83MaH5Vm5slTEfrwTg-BiunmDgSWlUOQCLcBGAsYHQ/s1600/20200703_175621.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="https://3.bp.blogspot.com/-Vx4dlaCBZJo/Xv8fmgcwzOI/AAAAAAAAFDk/d9_rUFTrsocaBRi0dx-bYRqQlvhfaj-7gCLcBGAsYHQ/s1600/20200703_175955.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="https://1.bp.blogspot.com/-X2YlB9LZXS0/Xv8fmhU1LCI/AAAAAAAAFDo/w-yH-KQJH8EEisDDQ2ORyad0SByMN1OIQCLcBGAsYHQ/s1600/20200703_180331.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="https://4.bp.blogspot.com/-pmkg-gaPR7U/Xv8fm2hFwNI/AAAAAAAAFDs/nx4C_RKzjTU8Ip__EMcj_8DKJrW9c8LowCLcBGAsYHQ/s1600/20200703_180544.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://1.bp.blogspot.com/-jdxP1a2VQC8/Xv8fjX4i02I/AAAAAAAAFDY/YssFoli4b4s3wdTbYNEvtVSZoh0l9p33ACLcBGAsYHQ/s1600/20200703_175453.jpg" style="width:100%" onclick="currentSlide(1)" alt="1 / 6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://1.bp.blogspot.com/-6zibVIkWV5s/Xv8fjUP4x4I/AAAAAAAAFDg/QNYjx4JIwEcLQrCu8bPoHFpYlTlXY-U3ACLcBGAsYHQ/s1600/20200703_175527.jpg" style="width:100%" onclick="currentSlide(2)" alt="2 / 6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://2.bp.blogspot.com/-9OZ98EGVph4/Xv8fjVj0yVI/AAAAAAAAFDc/G83MaH5Vm5slTEfrwTg-BiunmDgSWlUOQCLcBGAsYHQ/s1600/20200703_175621.jpg" style="width:100%" onclick="currentSlide(3)" alt="3 / 6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://3.bp.blogspot.com/-Vx4dlaCBZJo/Xv8fmgcwzOI/AAAAAAAAFDk/d9_rUFTrsocaBRi0dx-bYRqQlvhfaj-7gCLcBGAsYHQ/s1600/20200703_175955.jpg" style="width:100%" onclick="currentSlide(4)" alt="4 / 6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://1.bp.blogspot.com/-X2YlB9LZXS0/Xv8fmhU1LCI/AAAAAAAAFDo/w-yH-KQJH8EEisDDQ2ORyad0SByMN1OIQCLcBGAsYHQ/s1600/20200703_180331.jpg" style="width:100%" onclick="currentSlide(5)" alt="5 / 6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://4.bp.blogspot.com/-pmkg-gaPR7U/Xv8fm2hFwNI/AAAAAAAAFDs/nx4C_RKzjTU8Ip__EMcj_8DKJrW9c8LowCLcBGAsYHQ/s1600/20200703_180544.jpg" style="width:100%" onclick="currentSlide(6)" alt="6 / 6">
+    </div>
+  </div>
+</div>
+</div>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  top:10%;
+  transform:scale(0.9);
+  margin:auto;
+  height:auto;
+  border:1px solid white;
+  border-radius:5px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-image: linear-gradient(to right,#FF512F,#DD2476);
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<img src="https://1.bp.blogspot.com/-dfms5iaGGfE/Xv8q_LmrOwI/AAAAAAAAFFA/_stZbfQVPcY2CLGcXM1xftE-PdKniXj2QCLcBGAsYHQ/s1600/images%2B%252822%2529.jpeg" style="width:100%;height:30%">
+</div>
+
+<div style="width:100%;height:auto;background:black;margin:auto">
+<center>
+
+<img src="https://3.bp.blogspot.com/-0SULYFvvWzQ/Xv9BA1Hqx5I/AAAAAAAAFFk/l1X2SRaR6eArI5oQ4N7VkeBBJdMS6iLnACLcBGAsYHQ/s1600/IMG_20200319_031839-03.jpeg" style="width:90%;">
+<hr style="height:6px;background:yellow;width:100%;border:none">
+<img src="https://4.bp.blogspot.com/-4fXA6kKL56o/Xv9BAnuNkYI/AAAAAAAAFFc/1EsIliS1Ot497WEGDt1TZSTAHZ9WIv9QACLcBGAsYHQ/s1600/IMG_20200220_183839-01-01.jpeg" style="width:90%">
+<hr style="height:6px;background:yellow;width:100%;border:none">
+<img src="https://1.bp.blogspot.com/-I3sMW4Gu_gU/Xv9BAiFjKpI/AAAAAAAAFFg/KH0lhnBfvygFumxynB0FGygKnfy40b7pwCLcBGAsYHQ/s1600/IMG_20200220_185824-01-01.jpeg" style="width:90%">
+
+
+</center>
+</div>
+<div id="sec2" style="height:auto;width:100%;background:linear-gradient(to right,#1D976C,#93F9B9);">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeE0S6Ue7y6-tnXJhbMsZ27EMycxfZSgCuPWdEme4mHPRhN0Q/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+</div>
+<div style="width:100%;height:5000px;background:linear-gradient(to bottom,black,#303A52,#071A52,#21243D,#204051,#F35588,#FF1E56,#FF2E63,#A3F7BF)">
+<img src="https://1.bp.blogspot.com/-OqgFrxuWg-g/Xv9R-36mltI/AAAAAAAAFGQ/ihGj6mjblDUzU0uJvPwcarUoxZun2l_hQCLcBGAsYHQ/s1600/20200703_214228.png" style="width:100%;height:auto;position:sticky;top:100px">
+</div>
+<div style="height:100vh;z-index:10;background:black">
+<img src="https://1.bp.blogspot.com/-1xxyJO2Cm5E/Xv9WG6JH2bI/AAAAAAAAFGs/-S2rQr2f7U0f0hhN4cMfwGWuWS8fScGgQCLcBGAsYHQ/s1600/20200703_215807.gif" style="width:100%;height:auto;z-index:10;position:relative;top:100px">
+</div></body>
+</html>
